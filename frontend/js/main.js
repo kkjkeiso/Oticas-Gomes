@@ -7,6 +7,16 @@
   const backToTop = document.getElementById('backToTop');
   const cookieBanner = document.getElementById('cookieBanner');
   const cookieAccept = document.getElementById('cookieAccept');
+  const themeToggle = document.getElementById('themeToggle');
+
+  const THEME_KEY = 'oticasgomes:theme';
+  themeToggle.addEventListener('click', () => {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const current = document.documentElement.getAttribute('data-theme') || (prefersDark ? 'dark' : 'light');
+    const next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem(THEME_KEY, next);
+  });
 
   function onScroll() {
     const scrollY = window.scrollY;
