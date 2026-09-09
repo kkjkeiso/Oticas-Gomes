@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Óticas Gomes — O bem-estar da sua visão</title>
+<meta name="description" content="Óticas Gomes: armações receituário, óculos solares e assistência técnica gratuita para clientes. Rede com 6 unidades em 5 cidades do Rio Grande do Norte.">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 132 48'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237a1220'/%3E%3Cstop offset='1' stop-color='%23e2263a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='132' height='48' rx='10' fill='%23161311'/%3E%3Cg fill='none' stroke='url(%23g)' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='10' y='11' width='42' height='28' rx='14'/%3E%3Crect x='80' y='11' width='42' height='28' rx='14'/%3E%3Cpath d='M52 19 Q66 11 80 19'/%3E%3Cpath d='M10 17 L2 9'/%3E%3Cpath d='M122 17 L130 9'/%3E%3C/g%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="frontend/css/global.css">
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container site-header__inner">
+    <a class="logo" href="#inicio" aria-label="Óticas Gomes, ir para o início">
+      <svg class="logo__icon" viewBox="0 0 132 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="logoGradient" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="var(--red-deep)"/>
+            <stop offset="1" stop-color="var(--red-bright)"/>
+          </linearGradient>
+        </defs>
+        <g stroke="url(#logoGradient)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="10" y="11" width="42" height="28" rx="14"/>
+          <rect x="80" y="11" width="42" height="28" rx="14"/>
+          <path d="M52 19 Q66 11 80 19"/>
+          <path d="M10 17 L2 9"/>
+          <path d="M122 17 L130 9"/>
+        </g>
+      </svg>
+      <span class="logo__text">
+        <span class="logo__oticas">Óticas</span>
+        <span class="logo__gomes">Gomes</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="siteNav" aria-label="Navegação principal">
+      <ul class="nav__list">
+        <li><a href="#inicio" class="nav__link" data-nav>Inicial</a></li>
+        <li><a href="#sobre" class="nav__link" data-nav>Sobre nós</a></li>
+        <li><a href="#blog" class="nav__link" data-nav>Blog</a></li>
+        <li><a href="#contato" class="nav__link" data-nav>Fale conosco</a></li>
+      </ul>
+    </nav>
+
+    <div class="site-header__actions">
+      <a class="btn btn--ghost" href="tel:+5584994041034">(84) 9 9404-1034</a>
+      <a class="btn btn--primary" href="https://wa.me/5584994041034" target="_blank" rel="noopener">WhatsApp</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="inicio">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__content" data-reveal>
+        <p class="eyebrow">Óticas Gomes · Rio Grande do Norte</p>
+        <h1 class="hero__title">O bem-estar da<br>sua visão, <em>de perto</em>.</h1>
+        <p class="hero__subtitle">
+          Há 11 anos cuidando da visão de quem confia na gente — hoje em 6 unidades,
+          presentes em 5 cidades do interior potiguar, com o mesmo atendimento de sempre.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="https://wa.me/5584994041034" target="_blank" rel="noopener">
+            Falar no WhatsApp
+          </a>
+          <a class="btn btn--outline btn--lg" href="#produtos">Ver produtos e serviços</a>
+        </div>
+      </div>
+
+      <div class="hero__visual" data-reveal data-reveal-delay="1">
+        <svg class="hero__glasses" viewBox="0 0 320 140" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g stroke="url(#heroGradient)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="20" y="30" width="110" height="80" rx="34"/>
+            <rect x="190" y="30" width="110" height="80" rx="34"/>
+            <path d="M130 52 Q160 24 190 52"/>
+            <path d="M20 46 L-14 22"/>
+            <path d="M300 46 L334 22"/>
+          </g>
+          <defs>
+            <linearGradient id="heroGradient" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="var(--red-deep)"/>
+              <stop offset="1" stop-color="var(--red-bright)"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="products" id="produtos">
+    <div class="container">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">O que oferecemos</p>
+        <h2>Produtos e Serviços</h2>
+      </div>
+
+      <div class="products__grid">
+        <article class="product-card" data-reveal>
+          <span class="product-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M6 30 L16 14 H32 L42 30" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="32" r="8" stroke="currentColor" stroke-width="3"/><circle cx="36" cy="32" r="8" stroke="currentColor" stroke-width="3"/><path d="M20 32 H28" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Armações receituário</h3>
+          <p>Armações para todos os estilos, ajustadas ao seu grau com precisão e conforto no dia a dia.</p>
+        </article>
+
+        <article class="product-card" data-reveal data-reveal-delay="1">
+          <span class="product-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><circle cx="12" cy="26" r="9" stroke="currentColor" stroke-width="3"/><circle cx="36" cy="26" r="9" stroke="currentColor" stroke-width="3"/><path d="M21 24 H27" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M4 8 L10 17" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M44 8 L38 17" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Óculos solares</h3>
+          <p>Proteção para os olhos sem abrir mão do estilo, com opções para todas as ocasiões.</p>
+        </article>
+
+        <article class="product-card" data-reveal data-reveal-delay="2">
+          <span class="product-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none"><path d="M24 6 L38 14 V26 C38 34 32 41 24 44 C16 41 10 34 10 26 V14 Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M18 25 L22 29 L30 19" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>Assistência técnica</h3>
+          <p>Ajustes e pequenos reparos no seu óculos — <strong>gratuita para clientes.</strong></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats" id="numeros">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stat" data-reveal>
+          <span class="stat__value" data-count-to="11">0</span>
+          <span class="stat__label">Anos em Serviço</span>
+        </div>
+        <div class="stat" data-reveal data-reveal-delay="1">
+          <span class="stat__value" data-count-to="10">0</span>
+          <span class="stat__label">Funcionários</span>
+        </div>
+        <div class="stat" data-reveal data-reveal-delay="2">
+          <span class="stat__value" data-count-to="6">0</span>
+          <span class="stat__label">Unidades Físicas</span>
+        </div>
+        <div class="stat" data-reveal data-reveal-delay="3">
+          <span class="stat__value" data-count-to="5">0</span>
+          <span class="stat__label">Cidades atendidas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="sobre">
+    <div class="container about__inner">
+      <div class="about__text" data-reveal>
+        <p class="eyebrow">Sobre nós</p>
+        <h2>Uma família cuidando da visão de outras famílias.</h2>
+        <p>
+          A Óticas Gomes nasceu para cuidar da visão de quem confia na gente. Ao longo de
+          11 anos, crescemos de uma loja para uma rede com 6 unidades físicas, hoje
+          presentes em 5 cidades do interior do Rio Grande do Norte — sempre com a mesma
+          equipe próxima e o mesmo cuidado de sempre.
+        </p>
+        <p>
+          Hoje somos um time de 10 pessoas trabalhando todos os dias para que cada
+          cliente saia enxergando — e se sentindo — melhor.
+        </p>
+        <ul class="about__pillars">
+          <li><strong>Atendimento próximo.</strong> Sem discurso pronto, com quem entende o que você precisa.</li>
+          <li><strong>Assistência técnica gratuita.</strong> Ajustes e reparos sem custo pra quem já é cliente.</li>
+          <li><strong>Rede em expansão.</strong> Crescendo unidade por unidade, cidade por cidade.</li>
+        </ul>
+      </div>
+      <div class="about__visual" data-reveal data-reveal-delay="1" aria-hidden="true">
+        <div class="about__card about__card--1">
+          <span class="stat__value">11</span>
+          <span class="stat__label">anos de história</span>
+        </div>
+        <div class="about__card about__card--2">
+          <span class="stat__value">6</span>
+          <span class="stat__label">unidades físicas</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog" id="blog">
+    <div class="container">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">No blog</p>
+        <h2>Últimas Notícias</h2>
+      </div>
+
+      <div class="blog__grid">
+        <article class="blog-card" data-reveal>
+          <time datetime="2025-02-21">21 fevereiro 2025</time>
+          <h3>Astigmatismo: você pode ter e nem saber!</h3>
+          <p>Você já sentiu sua visão embaçada, turva ou distorcida? Pode ser astigmatismo — um problema refrativo que afeta milhões de pessoas e, muitas vezes, passa despercebido.</p>
+        </article>
+
+        <article class="blog-card" data-reveal data-reveal-delay="1">
+          <time datetime="2025-02-17">17 fevereiro 2025</time>
+          <h3>Materiais de armação: escolha o melhor pra você</h3>
+          <p>Conheça os diferentes materiais utilizados nas armações de óculos e descubra qual combina mais com seu estilo e conforto.</p>
+        </article>
+
+        <article class="blog-card" data-reveal data-reveal-delay="2">
+          <time datetime="2025-02-14">14 fevereiro 2025</time>
+          <h3>Os óculos da moda: modelos mais procurados</h3>
+          <p>Descubra os estilos de óculos que fazem sucesso no momento e veja qual combina melhor com o seu rosto.</p>
+        </article>
+
+        <article class="blog-card" data-reveal data-reveal-delay="3">
+          <time datetime="2025-02-10">10 fevereiro 2025</time>
+          <h3>Guia completo para escolher suas lentes</h3>
+          <p>Tipos de lentes, materiais, tratamentos especiais e dicas para melhorar o conforto e a saúde da sua visão.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band" id="contato">
+    <div class="container cta-band__inner" data-reveal>
+      <h2>Fale Conosco</h2>
+      <p>Dúvidas, orçamento ou só quer marcar um horário? Chama a gente.</p>
+      <div class="cta-band__contacts">
+        <a class="contact-pill" href="https://wa.me/5584994041034" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20Zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1s-.6.8-.7.9-.3.2-.5.1a6.6 6.6 0 0 1-1.9-1.2 7 7 0 0 1-1.3-1.6c-.1-.2 0-.3.1-.5l.4-.4.2-.4v-.4c0-.1-.5-1.3-.7-1.8s-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.1c0 1.3.9 2.5 1 2.7.1.2 1.8 2.9 4.5 4a15 15 0 0 0 1.5.5 3.6 3.6 0 0 0 1.7.1 2.8 2.8 0 0 0 1.8-1.3 2.3 2.3 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>
+          (84) 9 9404-1034
+        </a>
+        <a class="contact-pill" href="mailto:contato@oticasgomesrn.com.br">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          contato@oticasgomesrn.com.br
+        </a>
+        <a class="contact-pill" href="https://instagram.com/oticasgomesrn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          @oticasgomesrn
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__brand">
+      <a class="logo logo--footer" href="#inicio" aria-label="Óticas Gomes, ir para o início">
+        <svg class="logo__icon" viewBox="0 0 132 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g stroke="url(#logoGradient)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="10" y="11" width="42" height="28" rx="14"/>
+            <rect x="80" y="11" width="42" height="28" rx="14"/>
+            <path d="M52 19 Q66 11 80 19"/>
+            <path d="M10 17 L2 9"/>
+            <path d="M122 17 L130 9"/>
+          </g>
+        </svg>
+        <span class="logo__text">
+          <span class="logo__oticas">Óticas</span>
+          <span class="logo__gomes">Gomes</span>
+        </span>
+      </a>
+      <p>O bem-estar da sua visão.</p>
+    </div>
+
+    <nav class="site-footer__nav" aria-label="Acesso rápido">
+      <p class="site-footer__heading">Acesso rápido</p>
+      <ul>
+        <li><a href="#inicio">Inicial</a></li>
+        <li><a href="#sobre">Sobre nós</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contato">Fale conosco</a></li>
+      </ul>
+    </nav>
+
+    <div class="site-footer__contact">
+      <p class="site-footer__heading">Fale conosco</p>
+      <p><a href="tel:+5584994041034">(84) 9 9404-1034</a></p>
+      <p><a href="mailto:contato@oticasgomesrn.com.br">contato@oticasgomesrn.com.br</a></p>
+      <div class="site-footer__social">
+        <a href="https://instagram.com/oticasgomesrn" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        </a>
+        <a href="https://facebook.com/OticaGomesRn" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 8h2V4h-2a5 5 0 0 0-5 5v2H8v4h2v7h4v-7h3l1-4h-4V9a1 1 0 0 1 1-1Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-footer__bottom">
+    <div class="container">
+      <p>Copyright © 2026 Óticas Gomes. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+</button>
+
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite">
+  <p>Este site usa cookies para personalizar o conteúdo e analisar o tráfego a fim de oferecer a você uma experiência melhor.</p>
+  <button class="btn btn--primary btn--sm" id="cookieAccept">Permitir cookies</button>
+</div>
+
+<script src="frontend/js/main.js"></script>
+</body>
+</html>
