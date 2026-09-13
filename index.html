@@ -20,6 +20,8 @@
 </script>
 
 <link rel="stylesheet" href="frontend/css/global.css">
+<link rel="stylesheet" href="frontend/css/blog.css">
+<link rel="stylesheet" href="frontend/css/home.css">
 </head>
 <body>
 
@@ -47,9 +49,10 @@
     <nav class="nav" id="siteNav" aria-label="Navegação principal">
       <ul class="nav__list">
         <li><a href="#inicio" class="nav__link" data-nav>Inicial</a></li>
-        <li><a href="#sobre" class="nav__link" data-nav>Sobre nós</a></li>
-        <li><a href="#blog" class="nav__link" data-nav>Blog</a></li>
-        <li><a href="#contato" class="nav__link" data-nav>Fale conosco</a></li>
+        <li><a href="frontend/html/sobre.html" class="nav__link" data-nav>Sobre nós</a></li>
+        <li><a href="frontend/html/unidades.html" class="nav__link" data-nav>Unidades</a></li>
+        <li><a href="frontend/html/noticias.html" class="nav__link" data-nav>Notícias</a></li>
+        <li><a href="frontend/html/contato.html" class="nav__link" data-nav>Fale conosco</a></li>
       </ul>
     </nav>
 
@@ -201,20 +204,14 @@
         <p class="eyebrow">Sobre nós</p>
         <h2>Uma família cuidando da visão de outras famílias.</h2>
         <p>
-          A Óticas Gomes nasceu em 2012 para cuidar da visão de quem confia na gente. Ao
-          longo desses anos, crescemos de uma loja para uma rede com 7 unidades físicas,
-          hoje presentes em 6 cidades do Rio Grande do Norte — sempre com a mesma equipe
-          próxima e o mesmo cuidado de sempre.
+          Desde 2012 cuidando da visão de quem confia na gente. Hoje somos um time
+          de 10 pessoas espalhado por 7 unidades, sempre com o mesmo atendimento
+          próximo e a assistência técnica gratuita de sempre.
         </p>
-        <p>
-          Hoje somos um time de 10 pessoas trabalhando todos os dias para que cada
-          cliente saia enxergando — e se sentindo — melhor.
-        </p>
-        <ul class="about__pillars">
-          <li><strong>Atendimento próximo.</strong> Sem discurso pronto, com quem entende o que você precisa.</li>
-          <li><strong>Assistência técnica gratuita.</strong> Ajustes e reparos sem custo pra quem já é cliente.</li>
-          <li><strong>Rede em expansão.</strong> Presentes em Apodi, Felipe Guerra, Severiano Melo, Governador Dix-Sept Rosado, Baraúnas e Natal.</li>
-        </ul>
+        <a class="link-more" href="frontend/html/sobre.html">
+          Conheça nossa história
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
       </div>
       <div class="about__visual" data-reveal data-reveal-delay="1" aria-hidden="true">
         <div class="about__card about__card--1">
@@ -229,14 +226,41 @@
     </div>
   </section>
 
-  <section class="blog" id="blog">
+  <section class="locations" id="unidades">
     <div class="container">
       <div class="section-heading" data-reveal>
-        <p class="eyebrow">No blog</p>
-        <h2>Últimas Notícias</h2>
+        <p class="eyebrow">Onde estamos</p>
+        <h2>7 unidades em 6 cidades do Rio Grande do Norte.</h2>
+      </div>
+      <ul class="locations__chips" data-reveal>
+        <li>Apodi</li>
+        <li>Felipe Guerra</li>
+        <li>Severiano Melo</li>
+        <li>Governador Dix-Sept Rosado</li>
+        <li>Baraúnas</li>
+        <li>Natal</li>
+      </ul>
+      <a class="link-more" href="frontend/html/unidades.html">
+        Ver todas as unidades
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <section class="blog" id="noticias">
+    <div class="container">
+      <div class="section-heading section-heading__row" data-reveal>
+        <div>
+          <p class="eyebrow">Notícias</p>
+          <h2>Últimas Notícias</h2>
+        </div>
+        <a class="link-more" href="frontend/html/noticias.html">
+          Ver todas as notícias
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
       </div>
 
-      <div class="blog__grid">
+      <div class="blog__grid blog__grid--teaser">
         <article class="blog-card" data-reveal>
           <time datetime="2025-02-21">21 fevereiro 2025</time>
           <h3>Astigmatismo: você pode ter e nem saber!</h3>
@@ -247,18 +271,6 @@
           <time datetime="2025-02-17">17 fevereiro 2025</time>
           <h3>Materiais de armação: escolha o melhor pra você</h3>
           <p>Conheça os diferentes materiais utilizados nas armações de óculos e descubra qual combina mais com seu estilo e conforto.</p>
-        </article>
-
-        <article class="blog-card" data-reveal data-reveal-delay="2">
-          <time datetime="2025-02-14">14 fevereiro 2025</time>
-          <h3>Os óculos da moda: modelos mais procurados</h3>
-          <p>Descubra os estilos de óculos que fazem sucesso no momento e veja qual combina melhor com o seu rosto.</p>
-        </article>
-
-        <article class="blog-card" data-reveal data-reveal-delay="3">
-          <time datetime="2025-02-10">10 fevereiro 2025</time>
-          <h3>Guia completo para escolher suas lentes</h3>
-          <p>Tipos de lentes, materiais, tratamentos especiais e dicas para melhorar o conforto e a saúde da sua visão.</p>
         </article>
       </div>
     </div>
@@ -316,9 +328,10 @@
       <p class="site-footer__heading">Acesso rápido</p>
       <ul>
         <li><a href="#inicio">Inicial</a></li>
-        <li><a href="#sobre">Sobre nós</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contato">Fale conosco</a></li>
+        <li><a href="frontend/html/sobre.html">Sobre nós</a></li>
+        <li><a href="frontend/html/unidades.html">Unidades</a></li>
+        <li><a href="frontend/html/noticias.html">Notícias</a></li>
+        <li><a href="frontend/html/contato.html">Fale conosco</a></li>
       </ul>
     </nav>
 
@@ -354,5 +367,6 @@
 </div>
 
 <script src="frontend/js/main.js"></script>
+<script src="frontend/js/home.js"></script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+/* Used only on sobre.html */
+
+.timeline { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 20px; }
+.timeline li { display: grid; grid-template-columns: 100px 1fr; gap: 18px; }
+.timeline time { font-family: var(--font-display); font-weight: 700; color: var(--ink); }
+.timeline p { margin: 0; }
+
+.about__pillars { list-style: none; padding: 0; margin: 20px 0 0; display: grid; gap: 16px; }
+.about__pillars li { padding-left: 22px; position: relative; color: var(--ink-soft); font-size: 14.5px; }
+.about__pillars li::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 8px;
+  width: 8px; height: 1.5px;
+  background: var(--accent);
+}
+.about__pillars strong { color: var(--ink); }
+
+@media (max-width: 960px) {
+  .timeline li { grid-template-columns: 80px 1fr; }
+}

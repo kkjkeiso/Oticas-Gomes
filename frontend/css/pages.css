@@ -1,0 +1,28 @@
+/* Shared chrome for the deep-dive subpages (sobre, unidades, noticias, contato) */
+
+.page-hero { padding: calc(var(--header-h) + 56px) 0 56px; }
+.page-hero__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+.page-hero__breadcrumb a { color: var(--muted); transition: color 0.3s var(--ease); }
+.page-hero__breadcrumb a:hover { color: var(--ink); }
+.page-hero h1 { font-size: clamp(2rem, 3.6vw, 2.8rem); }
+.page-hero p { max-width: 560px; font-size: 16px; }
+
+/* Simple prose blocks — used on sobre.html, unidades.html and contato.html */
+.content-block { padding: 0 0 88px; }
+.content-block__inner { max-width: 720px; }
+.content-block h2 { font-size: clamp(1.5rem, 2.4vw, 1.9rem); margin-top: 40px; }
+.content-block h2:first-child { margin-top: 0; }
+
+/* Hours table — used on unidades.html and contato.html */
+.hours-table { border: 1px solid var(--line); border-radius: var(--radius-md); overflow: hidden; margin: 24px 0; }
+.hours-table__row { display: flex; justify-content: space-between; padding: 14px 20px; background: var(--surface); font-size: 14.5px; }
+.hours-table__row:not(:last-child) { border-bottom: 1px solid var(--line); }
+.hours-table__row span:first-child { color: var(--ink); font-weight: 500; }
+.hours-table__row span:last-child { color: var(--ink-soft); }

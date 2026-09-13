@@ -45,22 +45,15 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  const sections = Array.from(navLinks)
-    .map((link) => document.querySelector(link.getAttribute('href')))
-    .filter(Boolean);
-
-  const spyObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        navLinks.forEach((link) => {
-          link.classList.toggle('is-active', link.getAttribute('href') === `#${entry.target.id}`);
-        });
-      });
-    },
-    { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
-  );
-  sections.forEach((section) => spyObserver.observe(section));
+  // Highlights the nav tab matching the current page (anchor-based highlighting
+  // for the in-page index sections is handled separately by home.js).
+  const currentFile = location.pathname.split('/').pop() || 'index.html';
+  navLinks.forEach((link) => {
+    const href = link.getAttribute('href');
+    if (href.startsWith('#')) return;
+    const linkFile = href.split('/').pop().split('#')[0];
+    if (linkFile === currentFile) link.classList.add('is-active');
+  });
 
   const revealObserver = new IntersectionObserver(
     (entries, observer) => {
@@ -74,34 +67,6 @@
     { threshold: 0.15 }
   );
   document.querySelectorAll('[data-reveal]').forEach((el) => revealObserver.observe(el));
-
-  function animateCount(el) {
-    const target = Number(el.dataset.countTo || '0');
-    const duration = 1400;
-    const start = performance.now();
-
-    function tick(now) {
-      const progress = Math.min((now - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3);
-      el.textContent = Math.round(target * eased);
-      if (progress < 1) requestAnimationFrame(tick);
-    }
-    requestAnimationFrame(tick);
-  }
-
-  const statValues = document.querySelectorAll('.stat__value[data-count-to]');
-  const countObserver = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          animateCount(entry.target);
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.6 }
-  );
-  statValues.forEach((el) => countObserver.observe(el));
 
   const COOKIE_KEY = 'oticasgomes:cookies-accepted';
   if (!localStorage.getItem(COOKIE_KEY)) {

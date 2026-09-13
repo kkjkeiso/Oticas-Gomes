@@ -1,0 +1,16 @@
+/* Blog cards — used both in the index teaser and the full blog listing page */
+.blog { padding: 88px 0; background: var(--bg-alt); }
+.blog__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; }
+.blog-card { background: var(--surface); padding: 26px 22px; transition: background-color 0.4s var(--ease); }
+.blog-card:hover { background: var(--bg-alt); }
+.blog-card time { font-size: 12px; font-weight: 600; letter-spacing: 0.04em; color: var(--accent); text-transform: uppercase; }
+.blog-card h3 { font-size: 1rem; margin: 12px 0 10px; line-height: 1.3; }
+.blog-card p { font-size: 13.5px; margin: 0; }
+
+@media (max-width: 960px) {
+  .blog__grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 560px) {
+  .blog__grid { grid-template-columns: 1fr; }
+}
