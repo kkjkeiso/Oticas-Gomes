@@ -1,13 +1,12 @@
-# Licença de Uso Proprietária
+# Licença
 
-**Copyright © 2026 Óticas Gomes. Todos os direitos reservados.**
+Copyright © 2026 Óticas Gomes. Todos os direitos reservados.
 
-Este documento constitui os termos de licenciamento ("Licença") que regem o uso do código-fonte, layout, textos, identidade visual e demais ativos contidos neste repositório (o "Software"), desenvolvido por **Keyrrison Vinícius de Freitas Costa** ("Desenvolvedor") sob encomenda da **Óticas Gomes** ("Titular").
+Este código foi desenvolvido por Keyrrison Vinícius de Freitas Costa para uso
+exclusivo da Óticas Gomes. Nenhuma parte deste projeto — código-fonte, textos,
+imagens ou identidade visual — pode ser copiada, redistribuída, sublicenciada
+ou reutilizada, total ou parcialmente, sem autorização prévia por escrito do
+titular dos direitos.
 
-## Titularidade e uso permitido
-
-O Software é de propriedade exclusiva da Óticas Gomes, a quem pertencem todos os direitos patrimoniais sobre o código-fonte, design e conteúdo aqui produzidos, independentemente de autoria técnica. Nenhuma permissão de uso, cópia, modificação, distribuição, publicação ou exploração comercial do Software é concedida a terceiros por meio desta Licença; qualquer uso além do descrito a seguir depende de autorização prévia e expressa, por escrito, do Titular. É permitido a terceiros visualizar o código-fonte deste repositório para fins de estudo, aprendizado ou avaliação técnica, bem como referenciar este projeto como parte de portfólio profissional do Desenvolvedor — incluindo capturas de tela, trechos de código e descrição do trabalho realizado — desde que não sejam reproduzidos o site em produção nem seus ativos de marca, como logotipo, identidade visual e conteúdo institucional da Óticas Gomes. É expressamente proibido reutilizar, no todo ou em parte, o código-fonte, design ou conteúdo em outros projetos, comerciais ou não, sem autorização por escrito; publicar cópias funcionais — deploys, forks ou clones — do site fora do domínio oficial da Óticas Gomes; ou utilizar a marca, nome, logotipo ou identidade visual da Óticas Gomes fora do escopo deste projeto. Fontes tipográficas, ícones e demais recursos externos referenciados neste projeto permanecem sob as licenças de seus respectivos autores e não são cobertos por esta Licença.
-
-## Garantias, responsabilidade e disposições gerais
-
-O Software é fornecido "no estado em que se encontra", sem garantias de qualquer tipo, expressas ou implícitas, incluindo, mas não se limitando a, garantias de adequação a uma finalidade específica ou ausência de falhas. Em nenhuma hipótese o Desenvolvedor será responsabilizado por danos decorrentes do uso ou da impossibilidade de uso do Software, exceto nos casos previstos em contrato específico firmado entre as partes. Esta Licença permanece válida enquanto o Software existir, podendo ser revista a qualquer momento mediante acordo entre o Titular e o Desenvolvedor. Dúvidas sobre esta Licença ou solicitações de uso podem ser encaminhadas para **contato@oticasgomesrn.com.br**.
+É permitida a visualização do código-fonte para fins de estudo e portfólio,
+desde que sem redistribuição nem uso comercial por terceiros.
