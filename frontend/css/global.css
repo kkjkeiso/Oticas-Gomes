@@ -351,6 +351,37 @@ section { scroll-margin-top: var(--header-h); position: relative; z-index: 2; }
 .product-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
 .product-card p { margin: 0; font-size: 14.5px; }
 
+/* Brands */
+.brands { padding: 0 0 88px; }
+.brands__group { margin-bottom: 28px; }
+.brands__group:last-child { margin-bottom: 0; }
+.brands__label {
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+.brands__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.brands__list li {
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--ink);
+}
+
 /* Stats */
 .stats { padding: 0 0 88px; }
 .stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow: hidden; }
@@ -420,6 +451,11 @@ section { scroll-margin-top: var(--header-h); position: relative; z-index: 2; }
 }
 .contact-pill svg { width: 16px; height: 16px; color: var(--accent); }
 .contact-pill:hover { border-color: var(--accent); color: var(--accent); }
+.cta-band__hours {
+  margin: 28px 0 0;
+  font-size: 13.5px;
+  color: color-mix(in srgb, var(--bg) 65%, transparent);
+}
 
 /* Footer */
 .site-footer { background: var(--bg); border-top: 1px solid var(--line); }
